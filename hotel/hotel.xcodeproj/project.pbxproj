@@ -10,7 +10,7 @@
 		17A7EAC42F827DC528B81CFD /* libPods-hotel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23587549A023FFE5065E280F /* libPods-hotel.a */; };
 		84F86ADB1F4D94B400CC96D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F86ADA1F4D94B400CC96D5 /* main.m */; };
 		84F86ADE1F4D94B400CC96D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F86ADD1F4D94B400CC96D5 /* AppDelegate.m */; };
-		84F86AE41F4D94B400CC96D5 /* FirstMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F86AE21F4D94B400CC96D5 /* FirstMain.storyboard */; };
+		84F86AE41F4D94B400CC96D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F86AE21F4D94B400CC96D5 /* Main.storyboard */; };
 		84F86AE71F4D94B400CC96D5 /* hotel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84F86AE51F4D94B400CC96D5 /* hotel.xcdatamodeld */; };
 		84F86AE91F4D94B400CC96D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F86AE81F4D94B400CC96D5 /* Assets.xcassets */; };
 		84F86AEC1F4D94B400CC96D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F86AEA1F4D94B400CC96D5 /* LaunchScreen.storyboard */; };
@@ -74,7 +74,7 @@
 		84F86ADA1F4D94B400CC96D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84F86ADC1F4D94B400CC96D5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84F86ADD1F4D94B400CC96D5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		84F86AE31F4D94B400CC96D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/FirstMain.storyboard; sourceTree = "<group>"; };
+		84F86AE31F4D94B400CC96D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84F86AE61F4D94B400CC96D5 /* hotel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = hotel.xcdatamodel; sourceTree = "<group>"; };
 		84F86AE81F4D94B400CC96D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		84F86AEB1F4D94B400CC96D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -353,7 +353,7 @@
 		84F86B461F4D95DF00CC96D5 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				84F86AE21F4D94B400CC96D5 /* FirstMain.storyboard */,
+				84F86AE21F4D94B400CC96D5 /* Main.storyboard */,
 				84F86B6E1F4D98DE00CC96D5 /* SecondMain.storyboard */,
 				84F86B701F4D993900CC96D5 /* FirstMy.storyboard */,
 				84F86B721F4D995300CC96D5 /* SecondMy.storyboard */,
@@ -502,7 +502,7 @@
 				84F86B711F4D993900CC96D5 /* FirstMy.storyboard in Resources */,
 				84F86AE91F4D94B400CC96D5 /* Assets.xcassets in Resources */,
 				84F86B731F4D995300CC96D5 /* SecondMy.storyboard in Resources */,
-				84F86AE41F4D94B400CC96D5 /* FirstMain.storyboard in Resources */,
+				84F86AE41F4D94B400CC96D5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -634,12 +634,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		84F86AE21F4D94B400CC96D5 /* FirstMain.storyboard */ = {
+		84F86AE21F4D94B400CC96D5 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				84F86AE31F4D94B400CC96D5 /* Base */,
 			);
-			name = FirstMain.storyboard;
+			name = Main.storyboard;
 			path = ..;
 			sourceTree = "<group>";
 		};
