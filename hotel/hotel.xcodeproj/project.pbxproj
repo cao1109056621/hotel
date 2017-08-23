@@ -1,0 +1,894 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17A7EAC42F827DC528B81CFD /* libPods-hotel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23587549A023FFE5065E280F /* libPods-hotel.a */; };
+		84F86ADB1F4D94B400CC96D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F86ADA1F4D94B400CC96D5 /* main.m */; };
+		84F86ADE1F4D94B400CC96D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F86ADD1F4D94B400CC96D5 /* AppDelegate.m */; };
+		84F86AE41F4D94B400CC96D5 /* FirstMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F86AE21F4D94B400CC96D5 /* FirstMain.storyboard */; };
+		84F86AE71F4D94B400CC96D5 /* hotel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84F86AE51F4D94B400CC96D5 /* hotel.xcdatamodeld */; };
+		84F86AE91F4D94B400CC96D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F86AE81F4D94B400CC96D5 /* Assets.xcassets */; };
+		84F86AEC1F4D94B400CC96D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F86AEA1F4D94B400CC96D5 /* LaunchScreen.storyboard */; };
+		84F86AF71F4D94B400CC96D5 /* hotelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F86AF61F4D94B400CC96D5 /* hotelTests.m */; };
+		84F86B021F4D94B400CC96D5 /* hotelUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F86B011F4D94B400CC96D5 /* hotelUITests.m */; };
+		84F86B471F4D95DF00CC96D5 /* BasicEncodingRules.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F86B121F4D95DF00CC96D5 /* BasicEncodingRules.m */; };
+		84F86B481F4D95DF00CC96D5 /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F86B181F4D95DF00CC96D5 /* Order.m */; };
+		84F86B491F4D95DF00CC96D5 /* GBAlipayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F86B1D1F4D95DF00CC96D5 /* GBAlipayManager.m */; };
+		84F86B4A1F4D95DF00CC96D5 /* base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F86B201F4D95DF00CC96D5 /* base64.m */; };
+		84F86B4B1F4D95DF00CC96D5 /* DataSigner.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F86B231F4D95DF00CC96D5 /* DataSigner.m */; };
+		84F86B4C1F4D95DF00CC96D5 /* DataVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F86B251F4D95DF00CC96D5 /* DataVerifier.m */; };
+		84F86B4D1F4D95DF00CC96D5 /* MD5DataSigner.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F86B271F4D95DF00CC96D5 /* MD5DataSigner.m */; };
+		84F86B4E1F4D95DF00CC96D5 /* NSDataEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F86B291F4D95DF00CC96D5 /* NSDataEx.m */; };
+		84F86B4F1F4D95DF00CC96D5 /* openssl_wrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F86B2B1F4D95DF00CC96D5 /* openssl_wrapper.m */; };
+		84F86B501F4D95DF00CC96D5 /* RSADataSigner.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F86B2D1F4D95DF00CC96D5 /* RSADataSigner.m */; };
+		84F86B511F4D95DF00CC96D5 /* RSADataVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F86B2F1F4D95DF00CC96D5 /* RSADataVerifier.m */; };
+		84F86B521F4D95DF00CC96D5 /* AppAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F86B311F4D95DF00CC96D5 /* AppAPIClient.m */; };
+		84F86B531F4D95DF00CC96D5 /* ErrorHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F86B331F4D95DF00CC96D5 /* ErrorHandler.m */; };
+		84F86B541F4D95DF00CC96D5 /* JSONS.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F86B351F4D95DF00CC96D5 /* JSONS.m */; };
+		84F86B551F4D95DF00CC96D5 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F86B371F4D95DF00CC96D5 /* NSData+Base64.m */; };
+		84F86B561F4D95DF00CC96D5 /* NSDate+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F86B391F4D95DF00CC96D5 /* NSDate+Utility.m */; };
+		84F86B571F4D95DF00CC96D5 /* NSDateFormatter+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F86B3B1F4D95DF00CC96D5 /* NSDateFormatter+Category.m */; };
+		84F86B581F4D95DF00CC96D5 /* NSString+Crypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F86B3D1F4D95DF00CC96D5 /* NSString+Crypt.m */; };
+		84F86B591F4D95DF00CC96D5 /* RequestAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F86B3F1F4D95DF00CC96D5 /* RequestAPI.m */; };
+		84F86B5A1F4D95DF00CC96D5 /* StorageMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F86B411F4D95DF00CC96D5 /* StorageMgr.m */; };
+		84F86B5C1F4D95DF00CC96D5 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F86B451F4D95DF00CC96D5 /* Utilities.m */; };
+		84F86B621F4D95FA00CC96D5 /* AlipaySDK.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F86B5D1F4D95FA00CC96D5 /* AlipaySDK.bundle */; };
+		84F86B631F4D95FA00CC96D5 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F86B5E1F4D95FA00CC96D5 /* AlipaySDK.framework */; };
+		84F86B641F4D95FA00CC96D5 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F86B5F1F4D95FA00CC96D5 /* libcrypto.a */; };
+		84F86B651F4D95FA00CC96D5 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F86B601F4D95FA00CC96D5 /* libssl.a */; };
+		84F86B661F4D95FA00CC96D5 /* Openssl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F86B611F4D95FA00CC96D5 /* Openssl.framework */; };
+		84F86B681F4D960800CC96D5 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F86B671F4D960800CC96D5 /* CoreMotion.framework */; };
+		84F86B6A1F4D960E00CC96D5 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F86B691F4D960E00CC96D5 /* CoreTelephony.framework */; };
+		84F86B6C1F4D961400CC96D5 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F86B6B1F4D961400CC96D5 /* libz.tbd */; };
+		84F86B6F1F4D98DE00CC96D5 /* SecondMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F86B6E1F4D98DE00CC96D5 /* SecondMain.storyboard */; };
+		84F86B711F4D993900CC96D5 /* FirstMy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F86B701F4D993900CC96D5 /* FirstMy.storyboard */; };
+		84F86B731F4D995300CC96D5 /* SecondMy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F86B721F4D995300CC96D5 /* SecondMy.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84F86AF31F4D94B400CC96D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84F86ACE1F4D94B400CC96D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84F86AD51F4D94B400CC96D5;
+			remoteInfo = hotel;
+		};
+		84F86AFE1F4D94B400CC96D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84F86ACE1F4D94B400CC96D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84F86AD51F4D94B400CC96D5;
+			remoteInfo = hotel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		23587549A023FFE5065E280F /* libPods-hotel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-hotel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		455803378FD28DB9FF3178A2 /* Pods-hotel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hotel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hotel/Pods-hotel.debug.xcconfig"; sourceTree = "<group>"; };
+		84F86AD61F4D94B400CC96D5 /* hotel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hotel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F86ADA1F4D94B400CC96D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84F86ADC1F4D94B400CC96D5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		84F86ADD1F4D94B400CC96D5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		84F86AE31F4D94B400CC96D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/FirstMain.storyboard; sourceTree = "<group>"; };
+		84F86AE61F4D94B400CC96D5 /* hotel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = hotel.xcdatamodel; sourceTree = "<group>"; };
+		84F86AE81F4D94B400CC96D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		84F86AEB1F4D94B400CC96D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84F86AED1F4D94B400CC96D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F86AF21F4D94B400CC96D5 /* hotelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hotelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F86AF61F4D94B400CC96D5 /* hotelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hotelTests.m; sourceTree = "<group>"; };
+		84F86AF81F4D94B400CC96D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F86AFD1F4D94B400CC96D5 /* hotelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hotelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F86B011F4D94B400CC96D5 /* hotelUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hotelUITests.m; sourceTree = "<group>"; };
+		84F86B031F4D94B400CC96D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F86B111F4D95DF00CC96D5 /* BasicEncodingRules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicEncodingRules.h; sourceTree = "<group>"; };
+		84F86B121F4D95DF00CC96D5 /* BasicEncodingRules.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicEncodingRules.m; sourceTree = "<group>"; };
+		84F86B141F4D95DF00CC96D5 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		84F86B171F4D95DF00CC96D5 /* Order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Order.h; sourceTree = "<group>"; };
+		84F86B181F4D95DF00CC96D5 /* Order.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Order.m; sourceTree = "<group>"; };
+		84F86B1B1F4D95DF00CC96D5 /* GBAlipayConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBAlipayConfig.h; sourceTree = "<group>"; };
+		84F86B1C1F4D95DF00CC96D5 /* GBAlipayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBAlipayManager.h; sourceTree = "<group>"; };
+		84F86B1D1F4D95DF00CC96D5 /* GBAlipayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBAlipayManager.m; sourceTree = "<group>"; };
+		84F86B1F1F4D95DF00CC96D5 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
+		84F86B201F4D95DF00CC96D5 /* base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = base64.m; sourceTree = "<group>"; };
+		84F86B211F4D95DF00CC96D5 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		84F86B221F4D95DF00CC96D5 /* DataSigner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSigner.h; sourceTree = "<group>"; };
+		84F86B231F4D95DF00CC96D5 /* DataSigner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSigner.m; sourceTree = "<group>"; };
+		84F86B241F4D95DF00CC96D5 /* DataVerifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataVerifier.h; sourceTree = "<group>"; };
+		84F86B251F4D95DF00CC96D5 /* DataVerifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataVerifier.m; sourceTree = "<group>"; };
+		84F86B261F4D95DF00CC96D5 /* MD5DataSigner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MD5DataSigner.h; sourceTree = "<group>"; };
+		84F86B271F4D95DF00CC96D5 /* MD5DataSigner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MD5DataSigner.m; sourceTree = "<group>"; };
+		84F86B281F4D95DF00CC96D5 /* NSDataEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataEx.h; sourceTree = "<group>"; };
+		84F86B291F4D95DF00CC96D5 /* NSDataEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataEx.m; sourceTree = "<group>"; };
+		84F86B2A1F4D95DF00CC96D5 /* openssl_wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = openssl_wrapper.h; sourceTree = "<group>"; };
+		84F86B2B1F4D95DF00CC96D5 /* openssl_wrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = openssl_wrapper.m; sourceTree = "<group>"; };
+		84F86B2C1F4D95DF00CC96D5 /* RSADataSigner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSADataSigner.h; sourceTree = "<group>"; };
+		84F86B2D1F4D95DF00CC96D5 /* RSADataSigner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSADataSigner.m; sourceTree = "<group>"; };
+		84F86B2E1F4D95DF00CC96D5 /* RSADataVerifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSADataVerifier.h; sourceTree = "<group>"; };
+		84F86B2F1F4D95DF00CC96D5 /* RSADataVerifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSADataVerifier.m; sourceTree = "<group>"; };
+		84F86B301F4D95DF00CC96D5 /* AppAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppAPIClient.h; sourceTree = "<group>"; };
+		84F86B311F4D95DF00CC96D5 /* AppAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppAPIClient.m; sourceTree = "<group>"; };
+		84F86B321F4D95DF00CC96D5 /* ErrorHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorHandler.h; sourceTree = "<group>"; };
+		84F86B331F4D95DF00CC96D5 /* ErrorHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorHandler.m; sourceTree = "<group>"; };
+		84F86B341F4D95DF00CC96D5 /* JSONS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONS.h; sourceTree = "<group>"; };
+		84F86B351F4D95DF00CC96D5 /* JSONS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONS.m; sourceTree = "<group>"; };
+		84F86B361F4D95DF00CC96D5 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		84F86B371F4D95DF00CC96D5 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		84F86B381F4D95DF00CC96D5 /* NSDate+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utility.h"; sourceTree = "<group>"; };
+		84F86B391F4D95DF00CC96D5 /* NSDate+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utility.m"; sourceTree = "<group>"; };
+		84F86B3A1F4D95DF00CC96D5 /* NSDateFormatter+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+Category.h"; sourceTree = "<group>"; };
+		84F86B3B1F4D95DF00CC96D5 /* NSDateFormatter+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+Category.m"; sourceTree = "<group>"; };
+		84F86B3C1F4D95DF00CC96D5 /* NSString+Crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Crypt.h"; sourceTree = "<group>"; };
+		84F86B3D1F4D95DF00CC96D5 /* NSString+Crypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Crypt.m"; sourceTree = "<group>"; };
+		84F86B3E1F4D95DF00CC96D5 /* RequestAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestAPI.h; sourceTree = "<group>"; };
+		84F86B3F1F4D95DF00CC96D5 /* RequestAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestAPI.m; sourceTree = "<group>"; };
+		84F86B401F4D95DF00CC96D5 /* StorageMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageMgr.h; sourceTree = "<group>"; };
+		84F86B411F4D95DF00CC96D5 /* StorageMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageMgr.m; sourceTree = "<group>"; };
+		84F86B441F4D95DF00CC96D5 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		84F86B451F4D95DF00CC96D5 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		84F86B5D1F4D95FA00CC96D5 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AlipaySDK.bundle; path = hotel/AlipaySDK.bundle; sourceTree = "<group>"; };
+		84F86B5E1F4D95FA00CC96D5 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlipaySDK.framework; path = hotel/AlipaySDK.framework; sourceTree = "<group>"; };
+		84F86B5F1F4D95FA00CC96D5 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = hotel/libcrypto.a; sourceTree = "<group>"; };
+		84F86B601F4D95FA00CC96D5 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = hotel/libssl.a; sourceTree = "<group>"; };
+		84F86B611F4D95FA00CC96D5 /* Openssl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Openssl.framework; path = hotel/Openssl.framework; sourceTree = "<group>"; };
+		84F86B671F4D960800CC96D5 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		84F86B691F4D960E00CC96D5 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		84F86B6B1F4D961400CC96D5 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		84F86B6D1F4D963A00CC96D5 /* hotel.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hotel.pch; sourceTree = "<group>"; };
+		84F86B6E1F4D98DE00CC96D5 /* SecondMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SecondMain.storyboard; sourceTree = "<group>"; };
+		84F86B701F4D993900CC96D5 /* FirstMy.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FirstMy.storyboard; sourceTree = "<group>"; };
+		84F86B721F4D995300CC96D5 /* SecondMy.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SecondMy.storyboard; sourceTree = "<group>"; };
+		85FB03B6EE57DAD076367094 /* Pods-hotel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hotel.release.xcconfig"; path = "Pods/Target Support Files/Pods-hotel/Pods-hotel.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84F86AD31F4D94B400CC96D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F86B6C1F4D961400CC96D5 /* libz.tbd in Frameworks */,
+				84F86B6A1F4D960E00CC96D5 /* CoreTelephony.framework in Frameworks */,
+				84F86B681F4D960800CC96D5 /* CoreMotion.framework in Frameworks */,
+				84F86B621F4D95FA00CC96D5 /* AlipaySDK.bundle in Frameworks */,
+				84F86B631F4D95FA00CC96D5 /* AlipaySDK.framework in Frameworks */,
+				84F86B641F4D95FA00CC96D5 /* libcrypto.a in Frameworks */,
+				84F86B651F4D95FA00CC96D5 /* libssl.a in Frameworks */,
+				84F86B661F4D95FA00CC96D5 /* Openssl.framework in Frameworks */,
+				17A7EAC42F827DC528B81CFD /* libPods-hotel.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F86AEF1F4D94B400CC96D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F86AFA1F4D94B400CC96D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84F86ACD1F4D94B400CC96D5 = {
+			isa = PBXGroup;
+			children = (
+				84F86AD81F4D94B400CC96D5 /* hotel */,
+				84F86AF51F4D94B400CC96D5 /* hotelTests */,
+				84F86B001F4D94B400CC96D5 /* hotelUITests */,
+				84F86AD71F4D94B400CC96D5 /* Products */,
+				B9D848530A55C5224E1529BD /* Pods */,
+				C557F82D40ABEEFDDC9C8977 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84F86AD71F4D94B400CC96D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84F86AD61F4D94B400CC96D5 /* hotel.app */,
+				84F86AF21F4D94B400CC96D5 /* hotelTests.xctest */,
+				84F86AFD1F4D94B400CC96D5 /* hotelUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84F86AD81F4D94B400CC96D5 /* hotel */ = {
+			isa = PBXGroup;
+			children = (
+				84F86B0F1F4D95DF00CC96D5 /* 3rd */,
+				84F86B131F4D95DF00CC96D5 /* Constant */,
+				84F86B151F4D95DF00CC96D5 /* Controller */,
+				84F86B161F4D95DF00CC96D5 /* Model */,
+				84F86B191F4D95DF00CC96D5 /* Utility */,
+				84F86B461F4D95DF00CC96D5 /* View */,
+				84F86AD91F4D94B400CC96D5 /* Supporting Files */,
+			);
+			path = hotel;
+			sourceTree = "<group>";
+		};
+		84F86AD91F4D94B400CC96D5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84F86ADC1F4D94B400CC96D5 /* AppDelegate.h */,
+				84F86ADD1F4D94B400CC96D5 /* AppDelegate.m */,
+				84F86AED1F4D94B400CC96D5 /* Info.plist */,
+				84F86ADA1F4D94B400CC96D5 /* main.m */,
+				84F86B6D1F4D963A00CC96D5 /* hotel.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84F86AF51F4D94B400CC96D5 /* hotelTests */ = {
+			isa = PBXGroup;
+			children = (
+				84F86AF61F4D94B400CC96D5 /* hotelTests.m */,
+				84F86AF81F4D94B400CC96D5 /* Info.plist */,
+			);
+			path = hotelTests;
+			sourceTree = "<group>";
+		};
+		84F86B001F4D94B400CC96D5 /* hotelUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84F86B011F4D94B400CC96D5 /* hotelUITests.m */,
+				84F86B031F4D94B400CC96D5 /* Info.plist */,
+			);
+			path = hotelUITests;
+			sourceTree = "<group>";
+		};
+		84F86B0F1F4D95DF00CC96D5 /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				84F86B101F4D95DF00CC96D5 /* SCZ-BasicEncodingRules */,
+			);
+			path = 3rd;
+			sourceTree = "<group>";
+		};
+		84F86B101F4D95DF00CC96D5 /* SCZ-BasicEncodingRules */ = {
+			isa = PBXGroup;
+			children = (
+				84F86B111F4D95DF00CC96D5 /* BasicEncodingRules.h */,
+				84F86B121F4D95DF00CC96D5 /* BasicEncodingRules.m */,
+			);
+			path = "SCZ-BasicEncodingRules";
+			sourceTree = "<group>";
+		};
+		84F86B131F4D95DF00CC96D5 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				84F86B141F4D95DF00CC96D5 /* Constants.h */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		84F86B151F4D95DF00CC96D5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84F86B161F4D95DF00CC96D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84F86AE51F4D94B400CC96D5 /* hotel.xcdatamodeld */,
+				84F86B171F4D95DF00CC96D5 /* Order.h */,
+				84F86B181F4D95DF00CC96D5 /* Order.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84F86B191F4D95DF00CC96D5 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				84F86B1A1F4D95DF00CC96D5 /* AliMgr */,
+				84F86B1E1F4D95DF00CC96D5 /* AliUtil */,
+				84F86B301F4D95DF00CC96D5 /* AppAPIClient.h */,
+				84F86B311F4D95DF00CC96D5 /* AppAPIClient.m */,
+				84F86B321F4D95DF00CC96D5 /* ErrorHandler.h */,
+				84F86B331F4D95DF00CC96D5 /* ErrorHandler.m */,
+				84F86B341F4D95DF00CC96D5 /* JSONS.h */,
+				84F86B351F4D95DF00CC96D5 /* JSONS.m */,
+				84F86B361F4D95DF00CC96D5 /* NSData+Base64.h */,
+				84F86B371F4D95DF00CC96D5 /* NSData+Base64.m */,
+				84F86B381F4D95DF00CC96D5 /* NSDate+Utility.h */,
+				84F86B391F4D95DF00CC96D5 /* NSDate+Utility.m */,
+				84F86B3A1F4D95DF00CC96D5 /* NSDateFormatter+Category.h */,
+				84F86B3B1F4D95DF00CC96D5 /* NSDateFormatter+Category.m */,
+				84F86B3C1F4D95DF00CC96D5 /* NSString+Crypt.h */,
+				84F86B3D1F4D95DF00CC96D5 /* NSString+Crypt.m */,
+				84F86B3E1F4D95DF00CC96D5 /* RequestAPI.h */,
+				84F86B3F1F4D95DF00CC96D5 /* RequestAPI.m */,
+				84F86B401F4D95DF00CC96D5 /* StorageMgr.h */,
+				84F86B411F4D95DF00CC96D5 /* StorageMgr.m */,
+				84F86B441F4D95DF00CC96D5 /* Utilities.h */,
+				84F86B451F4D95DF00CC96D5 /* Utilities.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		84F86B1A1F4D95DF00CC96D5 /* AliMgr */ = {
+			isa = PBXGroup;
+			children = (
+				84F86B1B1F4D95DF00CC96D5 /* GBAlipayConfig.h */,
+				84F86B1C1F4D95DF00CC96D5 /* GBAlipayManager.h */,
+				84F86B1D1F4D95DF00CC96D5 /* GBAlipayManager.m */,
+			);
+			path = AliMgr;
+			sourceTree = "<group>";
+		};
+		84F86B1E1F4D95DF00CC96D5 /* AliUtil */ = {
+			isa = PBXGroup;
+			children = (
+				84F86B1F1F4D95DF00CC96D5 /* base64.h */,
+				84F86B201F4D95DF00CC96D5 /* base64.m */,
+				84F86B211F4D95DF00CC96D5 /* config.h */,
+				84F86B221F4D95DF00CC96D5 /* DataSigner.h */,
+				84F86B231F4D95DF00CC96D5 /* DataSigner.m */,
+				84F86B241F4D95DF00CC96D5 /* DataVerifier.h */,
+				84F86B251F4D95DF00CC96D5 /* DataVerifier.m */,
+				84F86B261F4D95DF00CC96D5 /* MD5DataSigner.h */,
+				84F86B271F4D95DF00CC96D5 /* MD5DataSigner.m */,
+				84F86B281F4D95DF00CC96D5 /* NSDataEx.h */,
+				84F86B291F4D95DF00CC96D5 /* NSDataEx.m */,
+				84F86B2A1F4D95DF00CC96D5 /* openssl_wrapper.h */,
+				84F86B2B1F4D95DF00CC96D5 /* openssl_wrapper.m */,
+				84F86B2C1F4D95DF00CC96D5 /* RSADataSigner.h */,
+				84F86B2D1F4D95DF00CC96D5 /* RSADataSigner.m */,
+				84F86B2E1F4D95DF00CC96D5 /* RSADataVerifier.h */,
+				84F86B2F1F4D95DF00CC96D5 /* RSADataVerifier.m */,
+			);
+			path = AliUtil;
+			sourceTree = "<group>";
+		};
+		84F86B461F4D95DF00CC96D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84F86AE21F4D94B400CC96D5 /* FirstMain.storyboard */,
+				84F86B6E1F4D98DE00CC96D5 /* SecondMain.storyboard */,
+				84F86B701F4D993900CC96D5 /* FirstMy.storyboard */,
+				84F86B721F4D995300CC96D5 /* SecondMy.storyboard */,
+				84F86AE81F4D94B400CC96D5 /* Assets.xcassets */,
+				84F86AEA1F4D94B400CC96D5 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B9D848530A55C5224E1529BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				455803378FD28DB9FF3178A2 /* Pods-hotel.debug.xcconfig */,
+				85FB03B6EE57DAD076367094 /* Pods-hotel.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C557F82D40ABEEFDDC9C8977 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84F86B6B1F4D961400CC96D5 /* libz.tbd */,
+				84F86B691F4D960E00CC96D5 /* CoreTelephony.framework */,
+				84F86B671F4D960800CC96D5 /* CoreMotion.framework */,
+				84F86B5D1F4D95FA00CC96D5 /* AlipaySDK.bundle */,
+				84F86B5E1F4D95FA00CC96D5 /* AlipaySDK.framework */,
+				84F86B5F1F4D95FA00CC96D5 /* libcrypto.a */,
+				84F86B601F4D95FA00CC96D5 /* libssl.a */,
+				84F86B611F4D95FA00CC96D5 /* Openssl.framework */,
+				23587549A023FFE5065E280F /* libPods-hotel.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84F86AD51F4D94B400CC96D5 /* hotel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F86B061F4D94B400CC96D5 /* Build configuration list for PBXNativeTarget "hotel" */;
+			buildPhases = (
+				7E7DA30EDEF39C39479124CA /* [CP] Check Pods Manifest.lock */,
+				84F86AD21F4D94B400CC96D5 /* Sources */,
+				84F86AD31F4D94B400CC96D5 /* Frameworks */,
+				84F86AD41F4D94B400CC96D5 /* Resources */,
+				A05A1055820D75EF813B93D0 /* [CP] Embed Pods Frameworks */,
+				03307370D06233F8CC2A4B21 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hotel;
+			productName = hotel;
+			productReference = 84F86AD61F4D94B400CC96D5 /* hotel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84F86AF11F4D94B400CC96D5 /* hotelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F86B091F4D94B400CC96D5 /* Build configuration list for PBXNativeTarget "hotelTests" */;
+			buildPhases = (
+				84F86AEE1F4D94B400CC96D5 /* Sources */,
+				84F86AEF1F4D94B400CC96D5 /* Frameworks */,
+				84F86AF01F4D94B400CC96D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84F86AF41F4D94B400CC96D5 /* PBXTargetDependency */,
+			);
+			name = hotelTests;
+			productName = hotelTests;
+			productReference = 84F86AF21F4D94B400CC96D5 /* hotelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84F86AFC1F4D94B400CC96D5 /* hotelUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F86B0C1F4D94B400CC96D5 /* Build configuration list for PBXNativeTarget "hotelUITests" */;
+			buildPhases = (
+				84F86AF91F4D94B400CC96D5 /* Sources */,
+				84F86AFA1F4D94B400CC96D5 /* Frameworks */,
+				84F86AFB1F4D94B400CC96D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84F86AFF1F4D94B400CC96D5 /* PBXTargetDependency */,
+			);
+			name = hotelUITests;
+			productName = hotelUITests;
+			productReference = 84F86AFD1F4D94B400CC96D5 /* hotelUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84F86ACE1F4D94B400CC96D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Education;
+				TargetAttributes = {
+					84F86AD51F4D94B400CC96D5 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					84F86AF11F4D94B400CC96D5 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 84F86AD51F4D94B400CC96D5;
+					};
+					84F86AFC1F4D94B400CC96D5 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 84F86AD51F4D94B400CC96D5;
+					};
+				};
+			};
+			buildConfigurationList = 84F86AD11F4D94B400CC96D5 /* Build configuration list for PBXProject "hotel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84F86ACD1F4D94B400CC96D5;
+			productRefGroup = 84F86AD71F4D94B400CC96D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84F86AD51F4D94B400CC96D5 /* hotel */,
+				84F86AF11F4D94B400CC96D5 /* hotelTests */,
+				84F86AFC1F4D94B400CC96D5 /* hotelUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84F86AD41F4D94B400CC96D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F86B6F1F4D98DE00CC96D5 /* SecondMain.storyboard in Resources */,
+				84F86AEC1F4D94B400CC96D5 /* LaunchScreen.storyboard in Resources */,
+				84F86B711F4D993900CC96D5 /* FirstMy.storyboard in Resources */,
+				84F86AE91F4D94B400CC96D5 /* Assets.xcassets in Resources */,
+				84F86B731F4D995300CC96D5 /* SecondMy.storyboard in Resources */,
+				84F86AE41F4D94B400CC96D5 /* FirstMain.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F86AF01F4D94B400CC96D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F86AFB1F4D94B400CC96D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03307370D06233F8CC2A4B21 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hotel/Pods-hotel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E7DA30EDEF39C39479124CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A05A1055820D75EF813B93D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hotel/Pods-hotel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84F86AD21F4D94B400CC96D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F86B551F4D95DF00CC96D5 /* NSData+Base64.m in Sources */,
+				84F86B4A1F4D95DF00CC96D5 /* base64.m in Sources */,
+				84F86B581F4D95DF00CC96D5 /* NSString+Crypt.m in Sources */,
+				84F86B481F4D95DF00CC96D5 /* Order.m in Sources */,
+				84F86B521F4D95DF00CC96D5 /* AppAPIClient.m in Sources */,
+				84F86B4D1F4D95DF00CC96D5 /* MD5DataSigner.m in Sources */,
+				84F86B471F4D95DF00CC96D5 /* BasicEncodingRules.m in Sources */,
+				84F86B4E1F4D95DF00CC96D5 /* NSDataEx.m in Sources */,
+				84F86B491F4D95DF00CC96D5 /* GBAlipayManager.m in Sources */,
+				84F86B5A1F4D95DF00CC96D5 /* StorageMgr.m in Sources */,
+				84F86B591F4D95DF00CC96D5 /* RequestAPI.m in Sources */,
+				84F86B4C1F4D95DF00CC96D5 /* DataVerifier.m in Sources */,
+				84F86B571F4D95DF00CC96D5 /* NSDateFormatter+Category.m in Sources */,
+				84F86B541F4D95DF00CC96D5 /* JSONS.m in Sources */,
+				84F86ADE1F4D94B400CC96D5 /* AppDelegate.m in Sources */,
+				84F86B4B1F4D95DF00CC96D5 /* DataSigner.m in Sources */,
+				84F86B511F4D95DF00CC96D5 /* RSADataVerifier.m in Sources */,
+				84F86B531F4D95DF00CC96D5 /* ErrorHandler.m in Sources */,
+				84F86AE71F4D94B400CC96D5 /* hotel.xcdatamodeld in Sources */,
+				84F86B4F1F4D95DF00CC96D5 /* openssl_wrapper.m in Sources */,
+				84F86B561F4D95DF00CC96D5 /* NSDate+Utility.m in Sources */,
+				84F86B501F4D95DF00CC96D5 /* RSADataSigner.m in Sources */,
+				84F86B5C1F4D95DF00CC96D5 /* Utilities.m in Sources */,
+				84F86ADB1F4D94B400CC96D5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F86AEE1F4D94B400CC96D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F86AF71F4D94B400CC96D5 /* hotelTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F86AF91F4D94B400CC96D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F86B021F4D94B400CC96D5 /* hotelUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84F86AF41F4D94B400CC96D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84F86AD51F4D94B400CC96D5 /* hotel */;
+			targetProxy = 84F86AF31F4D94B400CC96D5 /* PBXContainerItemProxy */;
+		};
+		84F86AFF1F4D94B400CC96D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84F86AD51F4D94B400CC96D5 /* hotel */;
+			targetProxy = 84F86AFE1F4D94B400CC96D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84F86AE21F4D94B400CC96D5 /* FirstMain.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84F86AE31F4D94B400CC96D5 /* Base */,
+			);
+			name = FirstMain.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		84F86AEA1F4D94B400CC96D5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84F86AEB1F4D94B400CC96D5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84F86B041F4D94B400CC96D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84F86B051F4D94B400CC96D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84F86B071F4D94B400CC96D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 455803378FD28DB9FF3178A2 /* Pods-hotel.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/hotel",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = hotel/hotel.pch;
+				INFOPLIST_FILE = hotel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/hotel",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = self.edu.hotel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		84F86B081F4D94B400CC96D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85FB03B6EE57DAD076367094 /* Pods-hotel.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/hotel",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = hotel/hotel.pch;
+				INFOPLIST_FILE = hotel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/hotel",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = self.edu.hotel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		84F86B0A1F4D94B400CC96D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = hotelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = self.edu.hotelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hotel.app/hotel";
+			};
+			name = Debug;
+		};
+		84F86B0B1F4D94B400CC96D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = hotelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = self.edu.hotelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hotel.app/hotel";
+			};
+			name = Release;
+		};
+		84F86B0D1F4D94B400CC96D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = hotelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = self.edu.hotelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = hotel;
+			};
+			name = Debug;
+		};
+		84F86B0E1F4D94B400CC96D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = hotelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = self.edu.hotelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = hotel;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84F86AD11F4D94B400CC96D5 /* Build configuration list for PBXProject "hotel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F86B041F4D94B400CC96D5 /* Debug */,
+				84F86B051F4D94B400CC96D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84F86B061F4D94B400CC96D5 /* Build configuration list for PBXNativeTarget "hotel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F86B071F4D94B400CC96D5 /* Debug */,
+				84F86B081F4D94B400CC96D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84F86B091F4D94B400CC96D5 /* Build configuration list for PBXNativeTarget "hotelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F86B0A1F4D94B400CC96D5 /* Debug */,
+				84F86B0B1F4D94B400CC96D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84F86B0C1F4D94B400CC96D5 /* Build configuration list for PBXNativeTarget "hotelUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F86B0D1F4D94B400CC96D5 /* Debug */,
+				84F86B0E1F4D94B400CC96D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		84F86AE51F4D94B400CC96D5 /* hotel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				84F86AE61F4D94B400CC96D5 /* hotel.xcdatamodel */,
+			);
+			currentVersion = 84F86AE61F4D94B400CC96D5 /* hotel.xcdatamodel */;
+			name = hotel.xcdatamodeld;
+			path = ../hotel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 84F86ACE1F4D94B400CC96D5 /* Project object */;
+}
