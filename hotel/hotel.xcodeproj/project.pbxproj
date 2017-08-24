@@ -24,7 +24,6 @@
 		84F86AEC1F4D94B400CC96D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F86AEA1F4D94B400CC96D5 /* LaunchScreen.storyboard */; };
 		84F86AF71F4D94B400CC96D5 /* hotelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F86AF61F4D94B400CC96D5 /* hotelTests.m */; };
 		84F86B021F4D94B400CC96D5 /* hotelUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F86B011F4D94B400CC96D5 /* hotelUITests.m */; };
-		84F86B471F4D95DF00CC96D5 /* BasicEncodingRules.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F86B121F4D95DF00CC96D5 /* BasicEncodingRules.m */; };
 		84F86B481F4D95DF00CC96D5 /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F86B181F4D95DF00CC96D5 /* Order.m */; };
 		84F86B491F4D95DF00CC96D5 /* GBAlipayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F86B1D1F4D95DF00CC96D5 /* GBAlipayManager.m */; };
 		84F86B4A1F4D95DF00CC96D5 /* base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F86B201F4D95DF00CC96D5 /* base64.m */; };
@@ -58,6 +57,14 @@
 		84F86B731F4D995300CC96D5 /* SecondMy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F86B721F4D995300CC96D5 /* SecondMy.storyboard */; };
 		B2C111461F4DA7020082EF67 /* HotelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C111431F4DA7020082EF67 /* HotelTableViewCell.m */; };
 		B2C111471F4DA7020082EF67 /* HotelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C111451F4DA7020082EF67 /* HotelViewController.m */; };
+		B2C1115F1F4E66A70082EF67 /* BasicEncodingRules.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C1114E1F4E66A70082EF67 /* BasicEncodingRules.m */; };
+		B2C111601F4E66A70082EF67 /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C111521F4E66A70082EF67 /* TAAbstractDotView.m */; };
+		B2C111611F4E66A70082EF67 /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C111541F4E66A70082EF67 /* TAAnimatedDotView.m */; };
+		B2C111621F4E66A70082EF67 /* TADotView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C111561F4E66A70082EF67 /* TADotView.m */; };
+		B2C111631F4E66A70082EF67 /* TAPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C111581F4E66A70082EF67 /* TAPageControl.m */; };
+		B2C111641F4E66A70082EF67 /* SDCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C1115A1F4E66A70082EF67 /* SDCollectionViewCell.m */; };
+		B2C111651F4E66A70082EF67 /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C1115C1F4E66A70082EF67 /* SDCycleScrollView.m */; };
+		B2C111661F4E66A70082EF67 /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C1115E1F4E66A70082EF67 /* UIView+SDExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,8 +118,6 @@
 		84F86AFD1F4D94B400CC96D5 /* hotelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hotelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F86B011F4D94B400CC96D5 /* hotelUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hotelUITests.m; sourceTree = "<group>"; };
 		84F86B031F4D94B400CC96D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		84F86B111F4D95DF00CC96D5 /* BasicEncodingRules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicEncodingRules.h; sourceTree = "<group>"; };
-		84F86B121F4D95DF00CC96D5 /* BasicEncodingRules.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicEncodingRules.m; sourceTree = "<group>"; };
 		84F86B141F4D95DF00CC96D5 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		84F86B171F4D95DF00CC96D5 /* Order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Order.h; sourceTree = "<group>"; };
 		84F86B181F4D95DF00CC96D5 /* Order.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Order.m; sourceTree = "<group>"; };
@@ -173,6 +178,22 @@
 		B2C111431F4DA7020082EF67 /* HotelTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelTableViewCell.m; sourceTree = "<group>"; };
 		B2C111441F4DA7020082EF67 /* HotelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelViewController.h; sourceTree = "<group>"; };
 		B2C111451F4DA7020082EF67 /* HotelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelViewController.m; sourceTree = "<group>"; };
+		B2C1114D1F4E66A70082EF67 /* BasicEncodingRules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicEncodingRules.h; sourceTree = "<group>"; };
+		B2C1114E1F4E66A70082EF67 /* BasicEncodingRules.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicEncodingRules.m; sourceTree = "<group>"; };
+		B2C111511F4E66A70082EF67 /* TAAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAbstractDotView.h; sourceTree = "<group>"; };
+		B2C111521F4E66A70082EF67 /* TAAbstractDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAbstractDotView.m; sourceTree = "<group>"; };
+		B2C111531F4E66A70082EF67 /* TAAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAnimatedDotView.h; sourceTree = "<group>"; };
+		B2C111541F4E66A70082EF67 /* TAAnimatedDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAnimatedDotView.m; sourceTree = "<group>"; };
+		B2C111551F4E66A70082EF67 /* TADotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADotView.h; sourceTree = "<group>"; };
+		B2C111561F4E66A70082EF67 /* TADotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADotView.m; sourceTree = "<group>"; };
+		B2C111571F4E66A70082EF67 /* TAPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPageControl.h; sourceTree = "<group>"; };
+		B2C111581F4E66A70082EF67 /* TAPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPageControl.m; sourceTree = "<group>"; };
+		B2C111591F4E66A70082EF67 /* SDCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCollectionViewCell.h; sourceTree = "<group>"; };
+		B2C1115A1F4E66A70082EF67 /* SDCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCollectionViewCell.m; sourceTree = "<group>"; };
+		B2C1115B1F4E66A70082EF67 /* SDCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCycleScrollView.h; sourceTree = "<group>"; };
+		B2C1115C1F4E66A70082EF67 /* SDCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCycleScrollView.m; sourceTree = "<group>"; };
+		B2C1115D1F4E66A70082EF67 /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
+		B2C1115E1F4E66A70082EF67 /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,7 +285,7 @@
 		84F86AD81F4D94B400CC96D5 /* hotel */ = {
 			isa = PBXGroup;
 			children = (
-				84F86B0F1F4D95DF00CC96D5 /* 3rd */,
+				B2C1114B1F4E66A70082EF67 /* 3rd */,
 				84F86B131F4D95DF00CC96D5 /* Constant */,
 				84F86B151F4D95DF00CC96D5 /* Controller */,
 				84F86B161F4D95DF00CC96D5 /* Model */,
@@ -305,6 +326,7 @@
 			path = hotelUITests;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		84F86B0F1F4D95DF00CC96D5 /* 3rd */ = {
 			isa = PBXGroup;
 			children = (
@@ -323,6 +345,8 @@
 			path = "SCZ-BasicEncodingRules";
 			sourceTree = "<group>";
 		};
+=======
+>>>>>>> 839bcc214e959bf0307d9a59105b3e3a063ce727
 		84F86B131F4D95DF00CC96D5 /* Constant */ = {
 			isa = PBXGroup;
 			children = (
@@ -439,6 +463,53 @@
 			path = hotel/hotelView;
 			sourceTree = SOURCE_ROOT;
 		};
+		B2C1114B1F4E66A70082EF67 /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				B2C1114C1F4E66A70082EF67 /* SCZ-BasicEncodingRules */,
+				B2C1114F1F4E66A70082EF67 /* SDCycleScrollView */,
+			);
+			path = 3rd;
+			sourceTree = "<group>";
+		};
+		B2C1114C1F4E66A70082EF67 /* SCZ-BasicEncodingRules */ = {
+			isa = PBXGroup;
+			children = (
+				B2C1114D1F4E66A70082EF67 /* BasicEncodingRules.h */,
+				B2C1114E1F4E66A70082EF67 /* BasicEncodingRules.m */,
+			);
+			path = "SCZ-BasicEncodingRules";
+			sourceTree = "<group>";
+		};
+		B2C1114F1F4E66A70082EF67 /* SDCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				B2C111501F4E66A70082EF67 /* PageControl */,
+				B2C111591F4E66A70082EF67 /* SDCollectionViewCell.h */,
+				B2C1115A1F4E66A70082EF67 /* SDCollectionViewCell.m */,
+				B2C1115B1F4E66A70082EF67 /* SDCycleScrollView.h */,
+				B2C1115C1F4E66A70082EF67 /* SDCycleScrollView.m */,
+				B2C1115D1F4E66A70082EF67 /* UIView+SDExtension.h */,
+				B2C1115E1F4E66A70082EF67 /* UIView+SDExtension.m */,
+			);
+			path = SDCycleScrollView;
+			sourceTree = "<group>";
+		};
+		B2C111501F4E66A70082EF67 /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+				B2C111511F4E66A70082EF67 /* TAAbstractDotView.h */,
+				B2C111521F4E66A70082EF67 /* TAAbstractDotView.m */,
+				B2C111531F4E66A70082EF67 /* TAAnimatedDotView.h */,
+				B2C111541F4E66A70082EF67 /* TAAnimatedDotView.m */,
+				B2C111551F4E66A70082EF67 /* TADotView.h */,
+				B2C111561F4E66A70082EF67 /* TADotView.m */,
+				B2C111571F4E66A70082EF67 /* TAPageControl.h */,
+				B2C111581F4E66A70082EF67 /* TAPageControl.m */,
+			);
+			path = PageControl;
+			sourceTree = "<group>";
+		};
 		B9D848530A55C5224E1529BD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -534,6 +605,7 @@
 				TargetAttributes = {
 					84F86AD51F4D94B400CC96D5 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = DZT4MGJM2Z;
 						ProvisioningStyle = Automatic;
 					};
 					84F86AF11F4D94B400CC96D5 = {
@@ -660,8 +732,8 @@
 				B2C111461F4DA7020082EF67 /* HotelTableViewCell.m in Sources */,
 				841FDA141F4E952D00903257 /* SDCycleScrollView.m in Sources */,
 				84F86B521F4D95DF00CC96D5 /* AppAPIClient.m in Sources */,
+				B2C111651F4E66A70082EF67 /* SDCycleScrollView.m in Sources */,
 				84F86B4D1F4D95DF00CC96D5 /* MD5DataSigner.m in Sources */,
-				84F86B471F4D95DF00CC96D5 /* BasicEncodingRules.m in Sources */,
 				84F86B4E1F4D95DF00CC96D5 /* NSDataEx.m in Sources */,
 				84F86B491F4D95DF00CC96D5 /* GBAlipayManager.m in Sources */,
 				84F86B5A1F4D95DF00CC96D5 /* StorageMgr.m in Sources */,
@@ -670,12 +742,21 @@
 				841FDA121F4E952D00903257 /* TAPageControl.m in Sources */,
 				841FDA131F4E952D00903257 /* SDCollectionViewCell.m in Sources */,
 				84F86B4C1F4D95DF00CC96D5 /* DataVerifier.m in Sources */,
+				B2C111661F4E66A70082EF67 /* UIView+SDExtension.m in Sources */,
+				B2C111631F4E66A70082EF67 /* TAPageControl.m in Sources */,
+				B2C111641F4E66A70082EF67 /* SDCollectionViewCell.m in Sources */,
 				84F86B571F4D95DF00CC96D5 /* NSDateFormatter+Category.m in Sources */,
 				84F86B541F4D95DF00CC96D5 /* JSONS.m in Sources */,
 				841FDA0F1F4E952D00903257 /* TAAbstractDotView.m in Sources */,
 				84F86ADE1F4D94B400CC96D5 /* AppDelegate.m in Sources */,
+<<<<<<< HEAD
 				841FDA111F4E952D00903257 /* TADotView.m in Sources */,
+=======
+				B2C111601F4E66A70082EF67 /* TAAbstractDotView.m in Sources */,
+>>>>>>> 839bcc214e959bf0307d9a59105b3e3a063ce727
 				84F86B4B1F4D95DF00CC96D5 /* DataSigner.m in Sources */,
+				B2C111621F4E66A70082EF67 /* TADotView.m in Sources */,
+				B2C1115F1F4E66A70082EF67 /* BasicEncodingRules.m in Sources */,
 				84F86B511F4D95DF00CC96D5 /* RSADataVerifier.m in Sources */,
 				84F86B531F4D95DF00CC96D5 /* ErrorHandler.m in Sources */,
 				84F86AE71F4D94B400CC96D5 /* hotel.xcdatamodeld in Sources */,
@@ -684,7 +765,11 @@
 				84F86B501F4D95DF00CC96D5 /* RSADataSigner.m in Sources */,
 				84F86B5C1F4D95DF00CC96D5 /* Utilities.m in Sources */,
 				84F86ADB1F4D94B400CC96D5 /* main.m in Sources */,
+<<<<<<< HEAD
 				841FDA101F4E952D00903257 /* TAAnimatedDotView.m in Sources */,
+=======
+				B2C111611F4E66A70082EF67 /* TAAnimatedDotView.m in Sources */,
+>>>>>>> 839bcc214e959bf0307d9a59105b3e3a063ce727
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -836,6 +921,7 @@
 			baseConfigurationReference = 455803378FD28DB9FF3178A2 /* Pods-hotel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DZT4MGJM2Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/hotel",
@@ -843,7 +929,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = hotel/hotel.pch;
 				INFOPLIST_FILE = hotel/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -859,6 +945,7 @@
 			baseConfigurationReference = 85FB03B6EE57DAD076367094 /* Pods-hotel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DZT4MGJM2Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/hotel",
@@ -866,7 +953,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = hotel/hotel.pch;
 				INFOPLIST_FILE = hotel/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
