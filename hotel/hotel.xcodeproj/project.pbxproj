@@ -48,6 +48,8 @@
 		84F86B6F1F4D98DE00CC96D5 /* SecondMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F86B6E1F4D98DE00CC96D5 /* SecondMain.storyboard */; };
 		84F86B711F4D993900CC96D5 /* FirstMy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F86B701F4D993900CC96D5 /* FirstMy.storyboard */; };
 		84F86B731F4D995300CC96D5 /* SecondMy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F86B721F4D995300CC96D5 /* SecondMy.storyboard */; };
+		B2C111461F4DA7020082EF67 /* HotelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C111431F4DA7020082EF67 /* HotelTableViewCell.m */; };
+		B2C111471F4DA7020082EF67 /* HotelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C111451F4DA7020082EF67 /* HotelViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,6 +145,10 @@
 		84F86B701F4D993900CC96D5 /* FirstMy.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FirstMy.storyboard; sourceTree = "<group>"; };
 		84F86B721F4D995300CC96D5 /* SecondMy.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SecondMy.storyboard; sourceTree = "<group>"; };
 		85FB03B6EE57DAD076367094 /* Pods-hotel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hotel.release.xcconfig"; path = "Pods/Target Support Files/Pods-hotel/Pods-hotel.release.xcconfig"; sourceTree = "<group>"; };
+		B2C111421F4DA7020082EF67 /* HotelTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelTableViewCell.h; sourceTree = "<group>"; };
+		B2C111431F4DA7020082EF67 /* HotelTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelTableViewCell.m; sourceTree = "<group>"; };
+		B2C111441F4DA7020082EF67 /* HotelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelViewController.h; sourceTree = "<group>"; };
+		B2C111451F4DA7020082EF67 /* HotelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -353,6 +359,7 @@
 		84F86B461F4D95DF00CC96D5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B2C111411F4DA7020082EF67 /* hotelView */,
 				84F86AE21F4D94B400CC96D5 /* Main.storyboard */,
 				84F86B6E1F4D98DE00CC96D5 /* SecondMain.storyboard */,
 				84F86B701F4D993900CC96D5 /* FirstMy.storyboard */,
@@ -362,6 +369,18 @@
 			);
 			path = View;
 			sourceTree = "<group>";
+		};
+		B2C111411F4DA7020082EF67 /* hotelView */ = {
+			isa = PBXGroup;
+			children = (
+				B2C111421F4DA7020082EF67 /* HotelTableViewCell.h */,
+				B2C111431F4DA7020082EF67 /* HotelTableViewCell.m */,
+				B2C111441F4DA7020082EF67 /* HotelViewController.h */,
+				B2C111451F4DA7020082EF67 /* HotelViewController.m */,
+			);
+			name = hotelView;
+			path = hotel/hotelView;
+			sourceTree = SOURCE_ROOT;
 		};
 		B9D848530A55C5224E1529BD /* Pods */ = {
 			isa = PBXGroup;
@@ -578,7 +597,9 @@
 				84F86B551F4D95DF00CC96D5 /* NSData+Base64.m in Sources */,
 				84F86B4A1F4D95DF00CC96D5 /* base64.m in Sources */,
 				84F86B581F4D95DF00CC96D5 /* NSString+Crypt.m in Sources */,
+				B2C111471F4DA7020082EF67 /* HotelViewController.m in Sources */,
 				84F86B481F4D95DF00CC96D5 /* Order.m in Sources */,
+				B2C111461F4DA7020082EF67 /* HotelTableViewCell.m in Sources */,
 				84F86B521F4D95DF00CC96D5 /* AppAPIClient.m in Sources */,
 				84F86B4D1F4D95DF00CC96D5 /* MD5DataSigner.m in Sources */,
 				84F86B471F4D95DF00CC96D5 /* BasicEncodingRules.m in Sources */,
