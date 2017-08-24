@@ -8,11 +8,16 @@
 
 #import "HotelViewController.h"
 #import "HotelTableViewCell.h"
-@interface HotelViewController ()<UITableViewDelegate,UITableViewDataSource>{
+#import "SDCycleScrollView.h"
+
+@interface HotelViewController ()<UITableViewDelegate,UITableViewDataSource,SDCycleScrollViewDelegate>{
     NSInteger page;
     NSInteger perPage;
 }
+
+@property (weak, nonatomic) IBOutlet SDCycleScrollView *bannerView;
 @property (strong ,nonatomic) NSArray *arr;
+@property (strong ,nonatomic) NSArray *arry;
 @end
 
 @implementation HotelViewController
@@ -21,6 +26,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
         _arr = @[@{@"imageview":@"h1",@"nameLabel":@"无锡万达喜来登酒店",@"placeLabel":@"无锡",@"distanceLabel":@"距离我3.5公里",@"priceLabel":@"Y 350"},@{@"imageview":@"h2",@"nameLabel":@"无锡苏宁凯越酒店",@"placeLabel":@"无锡",@"distanceLabel":@"距离我3.5公里",@"priceLabel":@"Y 260"},@{@"imageview":@"h1",@"nameLabel":@"无锡万达喜来登酒店",@"placeLabel":@"无锡",@"distanceLabel":@"距离我3.5公里",@"priceLabel":@"Y 350"},@{@"imageview":@"h2",@"nameLabel":@"无锡苏宁凯越酒店",@"placeLabel":@"无锡",@"distanceLabel":@"距离我3.5公里",@"priceLabel":@"Y 260"},@{@"imageview":@"h1",@"nameLabel":@"无锡万达喜来登酒店",@"placeLabel":@"无锡",@"distanceLabel":@"距离我3.5公里",@"priceLabel":@"Y 350"},@{@"imageview":@"h2",@"nameLabel":@"无锡苏宁凯越酒店",@"placeLabel":@"无锡",@"distanceLabel":@"距离我3.5公里",@"priceLabel":@"Y 260"},@{@"imageview":@"h1",@"nameLabel":@"无锡万达喜来登酒店",@"placeLabel":@"无锡",@"distanceLabel":@"距离我3.5公里",@"priceLabel":@"Y 350"},@{@"imageview":@"h2",@"nameLabel":@"无锡苏宁凯越酒店",@"placeLabel":@"无锡",@"distanceLabel":@"距离我3.5公里",@"priceLabel":@"Y 260"}];
+    
+    _arry = @[@"img_01.jpg",@"img_02.jpg",@"img_03.jpg",@"img_04.jpg",@"img_05.jpg"];
+    self.bannerView.imageURLStringsGroup = _arry;
+    self.bannerView.pageControlAliment = SDCycleScrollViewPageContolAlimentRight;
+    self.bannerView.delegate = self;
+    self.bannerView.currentPageDotColor = [UIColor yellowColor];
     perPage=10;
     page=1;
 }
@@ -29,6 +40,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 
 #pragma mark - table view
@@ -70,5 +82,4 @@
     // Pass the selected object to the new view controller.
 }
 */
-
 @end

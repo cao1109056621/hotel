@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -47,6 +48,10 @@
                                 <color key="barTintColor" red="0.023529411760000001" green="0.47450980390000003" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="alO-UI-WNQ" customClass="SDCycleScrollView">
+                                <rect key="frame" x="0.0" y="108" width="375" height="144"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Umk-aW-jAE">
                                 <rect key="frame" x="0.0" y="252" width="375" height="415"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -113,6 +118,7 @@
                                             <outlet property="nameLabel" destination="0qY-rQ-Sco" id="CQA-QP-Nn9"/>
                                             <outlet property="placeLabel" destination="zW8-I9-JMo" id="cV4-md-qf7"/>
                                             <outlet property="priceLabel" destination="54o-tO-l2l" id="h8o-zh-0C9"/>
+                                            <segue destination="EX0-9w-jIO" kind="show" trigger="accessoryAction" id="RdL-nP-KsW"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -121,44 +127,37 @@
                                     <outlet property="delegate" destination="jcr-hC-hYH" id="6Yw-yx-27k"/>
                                 </connections>
                             </tableView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NXD-5P-jg7">
-                                <rect key="frame" x="0.0" y="108" width="375" height="144"/>
-                                <subviews>
-                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="PWn-vF-yME">
-                                        <rect key="frame" x="137.5" y="107" width="100" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="201-gC-vgY"/>
-                                            <constraint firstAttribute="width" constant="100" id="VUF-Z7-m98"/>
-                                        </constraints>
-                                    </pageControl>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="PWn-vF-yME" firstAttribute="top" secondItem="NXD-5P-jg7" secondAttribute="top" constant="107" id="0Cf-ua-oYc"/>
-                                    <constraint firstItem="PWn-vF-yME" firstAttribute="centerX" secondItem="NXD-5P-jg7" secondAttribute="centerX" id="NdY-af-RGb"/>
-                                    <constraint firstAttribute="trailing" secondItem="PWn-vF-yME" secondAttribute="trailing" constant="178" id="hF8-RO-FBa"/>
-                                    <constraint firstAttribute="bottom" secondItem="PWn-vF-yME" secondAttribute="bottom" id="jOm-z9-gKx"/>
-                                </constraints>
-                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.023529411760000001" green="0.47450980390000003" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="TYn-zI-6TQ" firstAttribute="leading" secondItem="Ue8-eF-VmZ" secondAttribute="leading" constant="80" id="2NY-TX-QVN"/>
-                            <constraint firstItem="NXD-5P-jg7" firstAttribute="top" secondItem="TYn-zI-6TQ" secondAttribute="bottom" id="5wP-Jv-9gi"/>
+                            <constraint firstItem="alO-UI-WNQ" firstAttribute="top" secondItem="hmx-ZL-Non" secondAttribute="bottom" constant="44" id="954-e1-PAL"/>
                             <constraint firstItem="Umk-aW-jAE" firstAttribute="leading" secondItem="Ue8-eF-VmZ" secondAttribute="leading" id="D7i-4X-ke4"/>
                             <constraint firstAttribute="trailing" secondItem="Umk-aW-jAE" secondAttribute="trailing" id="FfF-aY-Q52"/>
                             <constraint firstAttribute="trailing" secondItem="TYn-zI-6TQ" secondAttribute="trailing" constant="80" id="GHA-W1-5Jx"/>
                             <constraint firstAttribute="bottom" secondItem="Umk-aW-jAE" secondAttribute="bottom" id="PUN-n6-ngD"/>
-                            <constraint firstAttribute="trailing" secondItem="NXD-5P-jg7" secondAttribute="trailing" id="ljj-xh-rVE"/>
-                            <constraint firstItem="Umk-aW-jAE" firstAttribute="top" secondItem="NXD-5P-jg7" secondAttribute="bottom" id="ncm-bs-cbh"/>
+                            <constraint firstItem="alO-UI-WNQ" firstAttribute="leading" secondItem="Ue8-eF-VmZ" secondAttribute="leading" id="Rwc-2H-EZQ"/>
+                            <constraint firstItem="Umk-aW-jAE" firstAttribute="top" secondItem="alO-UI-WNQ" secondAttribute="bottom" id="nsF-Io-WKB"/>
                             <constraint firstItem="TYn-zI-6TQ" firstAttribute="top" secondItem="hmx-ZL-Non" secondAttribute="bottom" id="ri1-TH-Npa"/>
-                            <constraint firstItem="NXD-5P-jg7" firstAttribute="leading" secondItem="Ue8-eF-VmZ" secondAttribute="leading" id="xgb-S2-MLt"/>
+                            <constraint firstAttribute="trailing" secondItem="alO-UI-WNQ" secondAttribute="trailing" id="xBI-pT-Lpu"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Get Hotel" id="Otr-NX-ZJ8"/>
+                    <connections>
+                        <outlet property="bannerView" destination="alO-UI-WNQ" id="NbA-Qv-HRy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kCU-RS-oXD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1758" y="-90"/>
+            <point key="canvasLocation" x="1757.5999999999999" y="-90.404797601199405"/>
+        </scene>
+        <!--SecondMain-->
+        <scene sceneID="TYS-iv-PtW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SecondMain" id="EX0-9w-jIO" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sHq-mA-uSB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2551" y="-91"/>
         </scene>
         <!--酒店-->
         <scene sceneID="yOw-4I-hxr">
@@ -166,7 +165,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tWD-ZC-DGD" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="酒店" image="hotel" id="4nf-CF-zu5"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="kGz-Ag-9rg">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="kGz-Ag-9rg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.023529411764705882" green="0.48627450980392156" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
